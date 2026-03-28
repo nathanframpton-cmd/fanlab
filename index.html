@@ -950,10 +950,10 @@ function ResultsScreen({
   }, "Sorted by score. Click a design to see all feedback.")), /*#__PURE__*/React.createElement("button", {
     style: S.btnSm,
     onClick: exportCSV
-  }, exportMsg || "Export CSV")), /*#__PURE__*/React.createElement("button", {
+  }, exportMsg || "Export CSV"), /*#__PURE__*/React.createElement("button", {
     style: Object.assign({}, S.btnSm, { background: showRaw ? C.surface : C.accent, color: showRaw ? C.accent : "#fff", border: "1px solid " + C.accent, marginLeft: 8 }),
     onClick: () => setShowRaw(!showRaw)
-  }, showRaw ? "Raw avg" : "Weighted score"), /*#__PURE__*/React.createElement("div", {
+  }, showRaw ? "Raw avg" : "Weighted score")), /*#__PURE__*/React.createElement("div", {
     style: S.rankList
   }, ranked.map((d, i) => /*#__PURE__*/React.createElement("div", {
     key: d.id,
