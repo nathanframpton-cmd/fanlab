@@ -937,7 +937,7 @@ function ResultsScreen({
     style: S.pageTitle
   }, "Design Rankings"), /*#__PURE__*/React.createElement("p", {
     style: S.pageSub
-  }, "Sorted by weighted score. Click a design to see all feedback.")), /*#__PURE__*/React.createElement("button", {
+  }, "Sorted by score. Click a design to see all feedback.")), /*#__PURE__*/React.createElement("button", {
     style: S.btnSm,
     onClick: exportCSV
   }, exportMsg || "Export CSV")), /*#__PURE__*/React.createElement("div", {
@@ -972,7 +972,7 @@ function ResultsScreen({
     style: S.scoreDisplay
   }, d.weightedScore > 0 ? d.weightedScore.toFixed(1) : "\u2014"), /*#__PURE__*/React.createElement("span", {
     style: S.scoreLabel
-  }, "score"))))), selected && /*#__PURE__*/React.createElement("div", {
+  }, "score"))))))), selected && /*#__PURE__*/React.createElement("div", {
     style: S.feedbackPanel
   }, /*#__PURE__*/React.createElement("div", {
     style: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 18 }
