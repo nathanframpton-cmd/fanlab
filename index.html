@@ -987,14 +987,12 @@ function ResultsScreen({
     style: S.scoreLabel
   }, showRaw ? "avg" : "score"))))), selected && /*#__PURE__*/React.createElement("div", {
     style: S.feedbackPanel
-  }, /*#__PURE__*/React.createElement("div", {
-    style: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 18 }
   }, /*#__PURE__*/React.createElement("h3", {
-    style: Object.assign({}, S.feedbackTitle, { marginBottom: 0 })
-  }, selected.name), /*#__PURE__*/React.createElement("button", {
+    style: Object.assign({}, S.feedbackTitle, { display: "flex", justifyContent: "space-between", alignItems: "center" })
+  }, selected.name, /*#__PURE__*/React.createElement("button", {
     onClick: () => setSelected(null),
-    style: { background: "none", border: "none", cursor: "pointer", fontSize: 22, color: "#999", padding: "4px 8px", lineHeight: 1 }
-  }, "\u2715"))
+    style: { background: "none", border: "none", cursor: "pointer", fontSize: 20, color: "#999", padding: "0 4px", lineHeight: 1, marginLeft: "auto" }
+  }, "\u2715")),
   }, selected.dRatings.length === 0 && /*#__PURE__*/React.createElement("p", {
     style: {
       color: C.muted,
