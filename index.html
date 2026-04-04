@@ -37,6 +37,8 @@ function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t =
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+const FANLAB_VERSION = "2.0.0";
+
 const {
   useState,
   useEffect,
@@ -380,7 +382,7 @@ function App() {
     }
   }), /*#__PURE__*/React.createElement("footer", {
     style: S.footer
-  }, "Created by Nathan Frampton, CEO \xB7 \xA9 Fanimation")));
+  }, "Created by Nathan Frampton, CEO \xB7 \xA9 Fanimation \xB7 v" + FANLAB_VERSION)));
 }
 
 // ============================================================
@@ -447,7 +449,7 @@ function AuthScreen({
     style: S.authSub
   }, "Design Research Platform"), /*#__PURE__*/React.createElement("p", {
     style: S.authCredit
-  }, "Created by Nathan Frampton, CEO"), /*#__PURE__*/React.createElement("div", {
+  }, "Created by Nathan Frampton, CEO \xB7 v" + FANLAB_VERSION), /*#__PURE__*/React.createElement("div", {
     style: S.tabRow
   }, /*#__PURE__*/React.createElement("button", {
     style: _objectSpread(_objectSpread({}, S.tab), mode === "login" ? S.tabActive : {}),
